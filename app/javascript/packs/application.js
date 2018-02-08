@@ -10,7 +10,11 @@
 console.log('Hello World from Webpacker')
 
 import Vue from 'vue/dist/vue.esm'
+import SuiVue from 'semantic-ui-vue';
+Vue.use(SuiVue);
+
 import App from '../components/app.vue'
+
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(document.createElement('app'))
