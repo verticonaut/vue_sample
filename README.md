@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+# Martin
+
+## Installation
+* yarn add semantic-ui-vue (npm did not work?)
+  * import and use in application layout
+* yarn add semantic-ui-css
+  * import in application css
+
+

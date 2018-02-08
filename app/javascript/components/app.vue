@@ -1,6 +1,15 @@
 <template>
   <div id="app">
     <p>{{ message }}</p>
+    <p>
+      <sui-button primary class-name='mini'>
+        <sui-icon name='user'/>
+        icon inline
+      </sui-button>
+      <sui-button primary icon='user' class-name='mini'>
+        icon via attr
+      </sui-button>
+    </p>
   </div>
 </template>
 
