@@ -9,12 +9,16 @@
 
 console.log('Hello World from Webpacker')
 
-import Vue from 'vue/dist/vue.esm'
+import Vue   from 'vue/dist/vue.esm'
+import axios from 'axios';
+
 import SuiVue from 'semantic-ui-vue';
 Vue.use(SuiVue);
 
-import App from '../components/app.vue'
+import VueSelect from 'vue-select/dist/vue-select.js'
+Vue.component('v-select', VueSelect)
 
+import App from '../components/app.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(document.createElement('app'))
@@ -25,4 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   console.log(app)
-})
+});
