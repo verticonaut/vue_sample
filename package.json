@@ -6,10 +6,12 @@
     "axios": "^0.17.1",
     "semantic-ui-css": "^2.2.14",
     "semantic-ui-vue": "^0.1.7",
+    "slim-lang-loader": "^0.0.7",
     "vue": "^2.5.13",
     "vue-loader": "^14.0.3",
     "vue-select": "^2.4.0",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "vue-template-compiler-loader": "^1.0.4"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.11.1"

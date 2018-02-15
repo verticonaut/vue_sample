@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div id="app">
     <p>{{ message }}</p>
     <p>
@@ -32,14 +32,18 @@
     </v-select>
 
   </div>
-</template>
+</template> -->
 
 <script>
+
+import template from './app.slim' 
+
 import axios from 'axios';
 axios.defaults.headers.common['X-ApiToken'] = 'eyJhbGciOiJIUzI1NiJ9.eyJhdXRoZW50aWNhdGVkX3VzZXJfbmFtZSI6MTA0OTQ4LCJzZWxlY3RlZF91c2VyX25hbWUiOjEwNDk0OCwicmVhc29uIjoibG9naW4ifQ.Krqc-MhO4KqRLoAzgWtJ3WYHaKhXADHk1GiHoHGNIEU';
 
 
 export default {
+  mixins: [template],
   data: function () {
     return {
       message: "Hello Vue!",

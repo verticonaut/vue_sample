@@ -1,0 +1,23 @@
+/ https://pawelniewiadomski.com/2017/08/12/migrating-rails-project-to-vue-with-slim-templates/
+#app
+  p {{ message }}
+  p
+    sui-button primary class-name='mini'
+      sui-icon name='user
+      icon inline
+    sui-button primary icon='user' class-name='mini'
+      icon via attr
+  p
+    v-select :options="options_fix"
+
+  h1 Vue Select - Ajax
+  v-select label="name" :filterable="false" :options="options" @search="onSearch"
+    template slot="no-options"
+      Type to search contacts.
+    template slot="option" slot-scope="option"
+      .d-center
+        {{ option.first_name }}
+    template slot="selected-option" scope="option"
+      .selected d-center
+        {{ option.last_name }}
+
