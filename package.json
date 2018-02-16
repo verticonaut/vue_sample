@@ -4,6 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "^3.2.1",
     "axios": "^0.17.1",
+    "pug": "^2.0.0-rc.4",
     "semantic-ui-css": "^2.2.14",
     "semantic-ui-vue": "^0.1.7",
     "vue": "^2.5.13",

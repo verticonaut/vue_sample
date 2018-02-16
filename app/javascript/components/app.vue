@@ -1,37 +1,26 @@
-<template>
-  <div id="app">
-    <p>{{ message }}</p>
-    <p>
-      <sui-button primary class-name='mini'>
-        <sui-icon name='user'/>
+<template lang='pug'>
+  #app
+    p 
+      | {{ message }}
+    p
+      sui-button(primary class-name='mini')
+        sui-icon(name='user')
         icon inline
-      </sui-button>
-      <sui-button primary icon='user' class-name='mini'>
+      sui-button(primary icon='user' class-name='mini')
         icon via attr
-      </sui-button>
-    </p>
-    <p>
-      <v-select :options="options_fix"></v-select>
-    </p>
+    p
+      v-select(:options="options_fix")
 
-    <h1>Vue Select - Ajax</h1>
-    <v-select label="name" :filterable="false" :options="options" @search="onSearch">
-      <template slot="no-options">
-        Type to search contacts.
-      </template>
-      <template slot="option" slot-scope="option">
-        <div class="d-center">
-          {{ option.first_name }}
-        </div>
-      </template>
-      <template slot="selected-option" scope="option">
-        <div class="selected d-center">
-          {{ option.last_name }}
-        </div>
-      </template>
-    </v-select>
-
-  </div>
+    h1 Vue Select - Ajax
+    v-select(label="name" :filterable="false" :options="options" @search="onSearch")
+      template(slot="no-options")
+        | Type to search contacts.
+      template(slot="option" slot-scope="option")
+        .d-center
+          | {{ option.first_name }}
+      template(slot="selected-option" scope="option")
+        .selected.d-center
+          | {{ option.last_name }}
 </template>
 
 <script>
