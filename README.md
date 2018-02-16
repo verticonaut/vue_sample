@@ -32,4 +32,3 @@ Things you may want to cover:
 * yarn add semantic-ui-css
   * import in application css
 
-
